@@ -16,10 +16,12 @@
 // Warning: if `exponent` is 0, result is always 1, even if `base` is 0 too.
 package imath
 
+import "imath/ux"
+
 func Powi(base int, exponent uint) int {
 	result := int(1)
 	for exponent > 0 {
-		if IsOddu(exponent) {
+		if ux.IsOdd(exponent) {
 			result *= base
 		}
 		base *= base
@@ -31,7 +33,7 @@ func Powi(base int, exponent uint) int {
 func Powi64(base int64, exponent uint) int64 {
 	result := int64(1)
 	for exponent > 0 {
-		if IsOddu(exponent) {
+		if ux.IsOdd(exponent) {
 			result *= base
 		}
 		base *= base
@@ -43,7 +45,7 @@ func Powi64(base int64, exponent uint) int64 {
 func Powu(base uint, exponent uint) uint {
 	result := uint(1)
 	for exponent > 0 {
-		if IsOddu(exponent) {
+		if ux.IsOdd(exponent) {
 			result *= base
 		}
 		base *= base
@@ -55,7 +57,7 @@ func Powu(base uint, exponent uint) uint {
 func Powu64(base uint64, exponent uint) uint64 {
 	result := uint64(1)
 	for exponent > 0 {
-		if IsOddu(exponent) {
+		if ux.IsOdd(exponent) {
 			result *= base
 		}
 		base *= base
