@@ -24,7 +24,7 @@ import (
 
 ### Platform dependent
 Name|Type|Value (32-bit)|Value (64-bit)
--|:-:|:-:|:-:|:-:
+-|:-:|:-:|:-:
 `ix.Size`|`uintptr`|4|8
 `ix.BitSize`|`uintptr`|32|64
 `ix.Minimal`|`int`|-2147483648|2147483647
