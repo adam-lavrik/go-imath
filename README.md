@@ -9,9 +9,9 @@ Functions have the same or similar names as their `float64` equialents from `mat
 ## Import
 ```go
 import (
-	"github.com/adam-lavrik/go-imath" // Root namespace
 	"github.com/adam-lavrik/go-imath/ix" // int-related functions
 	"github.com/adam-lavrik/go-imath/u32" // uint32-related function
+	...
 )
 ```
 
