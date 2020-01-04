@@ -283,7 +283,10 @@ s0 := ux.Sign(99) // s0 == uint(1)
 s1 := u16.Sign(0) // s1 == uint16(0)
 ```
 
-### imath.Pow#(base #, exponent uint) #
+### ix.Pow(base int, exponent uint) int
+### i64.Pow(base int64, exponent uint) int64
+### ux.Pow(base uint, exponent uint) uint
+### u64.Pow(base uint64, exponent uint) uint64
 Exponentiation of integral `base` and non-negative `exponent`.
 
 __Important__:
@@ -292,10 +295,10 @@ __Important__:
 
 __Examples__:
 ```go
-p0 := imath.Poweru(17, 2) // p0 == uint(289)
-p1 := imath.Poweri64(-41, 7) // p1 == int64(-194754273881)
-p2 := imath.Poweru64(0, 5) // p2 == uint64(0)
-p3 := imath.Poweri(-122, 0) // p3 == int(1)
+p0 := ux.Pow(17, 2) // p0 == uint(289)
+p1 := i64.Pow(-41, 7) // p1 == int64(-194754273881)
+p2 := u64.Pow(0, 5) // p2 == uint64(0)
+p3 := ix.Pow(-122, 0) // p3 == int(1)
 ```
 
 (c) Adam Lavrik <lavrik.adam@gmail.com>, 2020
