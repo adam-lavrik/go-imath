@@ -282,6 +282,28 @@ s0 := ux.Sign(99) // s0 == uint(1)
 s1 := u16.Sign(0) // s1 == uint16(0)
 ```
 
+### ix.Fibonacci(index int) int
+### i64.Fibonacci(index int) int64
+Fibonacci sequence member with corresponding `index`. `index` can be zero or negative.
+
+__Examples__:
+```go
+fi0 := ix.Fibonacci(0) // fi0 == int(0)
+fi1 := i64.Fibonacci(5) // fi1 == int64(5)
+fi2 := ix.Fibonacci(-4) // fi2 == int(-3)
+fi3 := i64.Fibonacci(-5) // fi3 == int64(5)
+```
+
+### ux.Fibonacci(index uint) uint
+### u64.Fibonacci(index uint) uint64
+Fibonacci sequence member with corresponding `index`. `index` can be zero.
+
+__Examples__:
+```go
+fu0 := ix.Fibonacci(0) // fu0 == int(0)
+fu1 := i64.Fibonacci(6) // fu == int64(8)
+```
+
 ### ix.Pow(base int, exponent uint) int
 ### i64.Pow(base int64, exponent uint) int64
 ### ux.Pow(base uint, exponent uint) uint
