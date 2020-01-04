@@ -16,11 +16,10 @@ import (
 ```
 
 ## Constants
-
-`Size` - size of type value in bytes
-`BitSize` - same in bits
-`Minimal` - minimal possible value of type
-`Maximal` - maximal possible value of type
+* `Size` - size of type value in bytes
+* `BitSize` - same in bits
+* `Minimal` - minimal possible value of type
+* `Maximal` - maximal possible value of type
 
 ### Platform dependent
 Name|Type|Value (32-bit)|Value (64-bit)
