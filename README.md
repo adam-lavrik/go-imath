@@ -27,12 +27,12 @@ Name|Type|Value (32-bit)|Value (64-bit)
 -|:-:|:-:|:-:
 `ix.Size`|`uintptr`|4|8
 `ix.BitSize`|`uintptr`|32|64
-`ix.Minimal`|`int`|-2147483648|2147483647
-`ix.Maximal`|`int`|-9223372036854775808|9223372036854775807
+`ix.Minimal`|`int`|-2147483648|-9223372036854775808
+`ix.Maximal`|`int`|2147483647|9223372036854775807
 `ux.Size`|`uintptr`|4|8
 `ux.BitSize`|`uintptr`|32|64
-`ux.Minimal`|`uint`|0|4294967295
-`ux.Maximal`|`uint`|0|18446744073709551615
+`ux.Minimal`|`uint`|0|0
+`ux.Maximal`|`uint`|4294967295|18446744073709551615
 
 ### Platform independent
 Name|Type|Value
